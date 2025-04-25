@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STITCH & HUE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#">
+                <div class="logo-container"><img src="images/small logo.png"></div>
+            </a>
+            <div class="name">STITCH & HUE</div>
+
+        </div>
+        <div class="nav-links">
+            <a href="#">Mens</a>
+            <a href="#">Women</a>
+            <a href="#">Lookbook</a>
+            <a href="#footer">Social</a>
+            <a href="#">Cart (0)</a>
+        </div>
+    </nav>
+</header>
+  
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="row">
+      <div class="col-md-7">
+        <h1 class="hero-heading">Defined by detail, refined by design.</h1>
+        <p class="brand-description">A contemporary fashion brand that focuses on designing and producing minimalist, high-quality clothing and accessories</p>
+        <div class="hero-buttons">
+          <!-- <a href="#" class="btn-shop">
+            Shop now
+            <i class="fas fa-arrow-right"></i>
+          </a> -->
+          <button href="index.html" class="button first-btn" style="--clr: #7808d0">
+            <span class="button__icon-wrapper">
+              <svg
+                viewBox="0 0 14 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="button__icon-svg"
+                width="10"
+              >
+                <path
+                  d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+          
+              <svg
+                viewBox="0 0 14 15"
+                fill="none"
+                width="10"
+                xmlns="http://www.w3.org/2000/svg"
+                class="button__icon-svg button__icon-svg--copy"
+              >
+                <path
+                  d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            Shop Now
+          </button>
+          <a href="#" class="btn-lookbook">2023 Lookbook</a>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <!-- This column is kept empty as specified -->
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Collection Grid -->
+  <div class="collection-grid">
+    <div class="row">
+      <!-- Man Collection -->
+      <div class="col-md-4">
+        <div class="collection-card" style="height: 650px;">
+          <img src="images/outdoor-model.png" alt="Man Collection" class="collection-img">
+          <div class="action-icon">
+            <i class="fas fa-arrow-right" style="color: white;"></i>
+          </div>
+          <div class="collection-content">
+            <h2 class="collection-title">Man Collection</h2>
+            <p class="collection-subtitle">Designed to stand the test of time</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Women Collection + Special Offer -->
+      <div class="col-md-4">
+        <div class="split-column">
+          <div class="collection-card" style="height: calc(50% + 2.5rem);">
+            <img src="images/hanger.jpg" alt="Women Collection" class="collection-img">
+            <div class="collection-content">
+              <h2 class="collection-title">Women Collection</h2>
+            </div>
+          </div>
+          
+          <div class="special-offer">
+            <span class="offer-badge">Special offer</span>
+            <h3 class="offer-title">Save 20% off this holiday season</h3>
+            <p>using the code Y2023.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Girl's Top -->
+      <div class="col-md-4">
+        <div class="collection-card" style="height: 650px;">
+          <img src="images/top-girl.png" alt="Girl's Top" class="collection-img">
+          <div class="collection-content">
+            <h2 class="collection-title">Girl's Top</h2>
+            <p class="collection-subtitle">Mysterious everyday</p>
+            <a href="#" class="shop-now-btn">
+              Shop now
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

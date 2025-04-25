@@ -1,0 +1,341 @@
+:root {
+    /* Color Palette */
+    --blue-primary: #0056b3;
+    --blue-dark: #003366;
+    --blue-light: #99CCFF;
+    --white: #ffffff;
+    --black: #333333;
+    --pink: #ff6b9a;
+    --light-gray: #f8f9fa;
+    --gray: #cccccc;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--blue-dark);
+  }
+
+  /* Subheadings or Secondary Text */
+  h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Product Description */
+  p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+  }
+
+  /* Elegant Titles or Premium Sections */
+  h1.special-heading {
+    font-family: 'Playfair Display', serif;
+  }
+
+  span, small {
+    font-family: 'Lato', sans-serif;
+  }
+
+
+
+
+   /* navbar */
+
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    font-weight: bold;
+    font-size: large;
+    color: var(--blue-dark);
+}
+
+.logo-container{
+    width: 90px;
+    height: 70px;
+    display: flex;
+}
+.logo-container img{
+    width: 100%;
+    height: 100%;
+}
+.navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff69b4;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff69b4;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+  /* Hero Section */
+  .hero-section {
+    padding: 8rem 2rem 3rem; /* Added extra top padding to account for fixed navbar */
+  }
+  
+  .hero-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-shop {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .btn-lookbook {
+    border: 1px solid var(--gray);
+    background-color: transparent;
+    color: var(--black);
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .brand-description {
+    color: #666;
+    font-size: 0.95rem;
+    max-width: 90%;
+    line-height: 1.6;
+  }
+  
+  /* Collection Grid */
+  .collection-grid {
+    padding: 0 2rem 2rem;
+  }
+  
+  .collection-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    height: 350px;
+   
+  }
+  
+  .collection-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .collection-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem;
+    color: var(--white);
+    width: 100%;
+  }
+  
+  .collection-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color:var(--white);
+  }
+  
+  .collection-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  
+  .action-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .action-icon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+
+
+
+
+/* button  */
+/* From Uiverse.io by Creatlydev */ 
+.button {
+    bottom: 8%;
+    left: 5%;
+    line-height: 1;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--blue-dark);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+  }
+  
+  .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--pink);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .button:hover {
+    background-color: var(--pink);
+  }
+  
+  .button:hover .button__icon-wrapper {
+    color:var(--blue-dark);
+  }
+  
+  .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .button:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .button:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+  }
+  
+
+  /* Special Offer */
+  .special-offer {
+    background-color: #f4f4ef;
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: calc(50% - 0.5rem);
+  }
+  
+  .offer-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    background-color: var(--white);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .offer-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .shop-now-btn {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+  }
+  
+  /* Grid layout adjustments */
+  .split-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Image gradients for text visibility */
+  .collection-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+  }
