@@ -6,6 +6,8 @@
   <title>STITCH & HUE</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="style2.css">
 
@@ -80,6 +82,155 @@
       </div>
     </div>
   </div>
+
+
+
+
+  <!-- Product Carousel Section -->
+  <section class="product-carousel">
+    <div class="container">
+        <div class="nav-arrows">
+            <div class="nav-arrow prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+            </div>
+            <div class="nav-arrow next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="owl-carousel">
+            <div class="featured-product">
+                <div>
+                    <div class="featured-product-title">Relaxed Fit Linen Shirt</div>
+                    <div class="featured-product-subtitle">The perfect spring essential</div>
+                    <div class="my-4">
+                        <img src="images/linen.jpg" alt="Linen Shirt" class="img-fluid">
+                    </div>
+                </div>
+                <div>
+                    <div class="options-row">
+                        <div class="option-label">Size</div>
+                        <div class="option-selector">
+                            Select a size
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="options-row">
+                        <div class="option-label">Color</div>
+                        <div class="color-options">
+                            <div class="color-option" style="background-color: #f2e8dc;"></div>
+                            <div class="color-option" style="background-color: #b2c8df;"></div>
+                            <div class="color-option" style="background-color: #7a9a7e;"></div>
+                            <div class="color-option" style="background-color: #f5cda7;"></div>
+                        </div>
+                    </div>
+                    <div class="options-row">
+                        <div class="option-label">Style</div>
+                        <div class="option-selector">
+                            Regular fit
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/shirt.jpg" alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Cotton-Blend T-Shirt</div>
+                    <div class="product-category">Women's Basics</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Material</span>
+                        <span class="spec-value">95% Cotton</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Fit</span>
+                        <span class="spec-value">Regular</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Colors</span>
+                        <span class="spec-value">4 options</span>
+                    </div>
+                    <div class="product-price mt-3">$24.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/chino.jpg" alt="Product 2">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Slim-Fit Chino Pants</div>
+                    <div class="product-category">Men's Bottoms</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Material</span>
+                        <span class="spec-value">98% Cotton</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Fit</span>
+                        <span class="spec-value">Slim</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Colors</span>
+                        <span class="spec-value">5 options</span>
+                    </div>
+                    <div class="product-price mt-3">$39.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/denim.jpg" alt="Product 3">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Oversized Denim </div>
+                    <div class="product-category">Women's Outerwear</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Material</span>
+                        <span class="spec-value">100% Cotton</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Fit</span>
+                        <span class="spec-value">Oversized</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Colors</span>
+                        <span class="spec-value">3 options</span>
+                    </div>
+                    <div class="product-price mt-3">$59.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/sweater.jpg" alt="Product 4">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Light Knit Sweater</div>
+                    <div class="product-category">Men's Tops</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Material</span>
+                        <span class="spec-value">60% Cotton</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Fit</span>
+                        <span class="spec-value">Regular</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Colors</span>
+                        <span class="spec-value">6 options</span>
+                    </div>
+                    <div class="product-price mt-3">$44.99</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
   
 
   <!-- Collection Grid -->
@@ -135,6 +286,8 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
     window.addEventListener('scroll', function() {
       const navbar = document.getElementById('navbar');
@@ -144,6 +297,64 @@
         navbar.classList.remove('scrolled');
       }
     });
+    $(document).ready(function(){
+            const owl = $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    576:{
+                        items:2
+                    },
+                    992:{
+                        items:3
+                    },
+                    1200:{
+                        items:4
+                    }
+                }
+            });
+            
+            // Custom navigation
+            $('.nav-arrow.prev').click(function() {
+                owl.trigger('prev.owl.carousel');
+            });
+            
+            $('.nav-arrow.next').click(function() {
+                owl.trigger('next.owl.carousel');
+            });
+            
+           
+            function createProductCard(product) {
+                return `
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="${product.image}" alt="${product.title}">
+                        </div>
+                        <div class="product-details">
+                            <div class="product-title">${product.title}</div>
+                            <div class="product-category">${product.category}</div>
+                            <div class="spec-row">
+                                <span class="spec-label">Material</span>
+                                <span class="spec-value">${product.material || 'Mixed'}</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Fit</span>
+                                <span class="spec-value">${product.fit || 'Regular'}</span>
+                            </div>
+                            <div class="product-price mt-3">$${product.price}</div>
+                        </div>
+                    </div>
+                `;
+            }
+        });
+
+
+    
   </script>
 </body>
 </html>
